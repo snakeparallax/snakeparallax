@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Parallax</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Clean and Smooth Parallax - Jquery Plugin">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900|PT+Serif:700|Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-smooth-parallax.css">
+    <script src="Snake.Parallax.js"></script>
+    <script>
+      $(document, window).SnakeParallax({
+        backgroundPosition:"center top",
+        backgroundImage:"url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1713&q=80')"
+      });
+    </script>
+    <noscript><style>[snake-parallax="hero"]{background-repeat:no-repeat;background-position:center;background-size:cover;background-image:url('https://images.unsplash.com/photo-1502306988843-d28a54f1c14c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')}</style></noscript>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+    <div class="hero-section" snake-parallax="hero">
+      <div class="hero-wrapper">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Snake Parallax</h1>
+          <p class="hero-subtitle">A jquery plugin that creates a simple, clean, and powerfull parallax effect.</p>
+          <div class="hero-btns">
+            <div class="btn">
+              <a href="Snake.Parallax.js" class="snake-prim">Download Snake.Parallax.js</a>
+            </div>
+            <div class="btn">
+              <a href="https://github.com/Najdaoui" class="snake-sec">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="features-box">
+        <h3>No coding skills needed</h3>
+        <p>No matter if you are a beginner or an advanced developer, integrating <i>Snake Parallax</i> is easy.</p>
+      </div>
+      <div class="features-box">
+        <h3>No css needed</h3>
+        <p><i>Snake Parallax</i> imports its style directly from the javascript file. You have nothing to add in your own css file</p>
+      </div>
+      <div class="features-box">
+        <h3>Fully Responsive</h3>
+        <p>From the monitor to the smallest smartphone, <i>Snake Parallax</i> adapts to the size of your device.</p>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="demo-box">
+        <h3>Installation</h3>
+        <p>Include <span class="und">Snake.Parallax.js</span> file in the <span class="und">head</span> tag, call the plugin, and add the attribute <span class="highlight">snak-parallax="hero"</span> in your hero section. Cheers!</p>
+        <div class="editor">
+          <ul class="code">
+            <li><span class="ntr">&lt;</span><span class="tag">head</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="comment">// JQuery</span></li>
+            <li><span class="ntr">&lt;</span><span class="tag">script</span> <span class="attribute">src</span><span class="ntr">="</span><span class="link">https://code.jquery.com/jquery-3.4.1.min.js</span><span class="ntr">"</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="comment">// Snake.Parallax.js</span></li>
+            <li><span class="ntr">&lt;</span><span class="tag">script</span> <span class="attribute">src</span><span class="ntr">="</span><span class="not-link">YOUR_PATH/snake.parallax.js</span><span class="ntr">"</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="comment">// Call the plugin</span></li>
+            <li><span class="ntr">&lt;</span><span class="tag">script</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="space"></span><span class="bl">$</span><span class="ntr">(</span><span class="ntr"><span class="tag">window</span>, <span class="tag">document</span></span><span class="ntr">).</span><span class="bl">SnakeParallax</span><span class="ntr">({</span></li>
+            <li style="margin-top: 10px;"><span class="space"></span><span class="space"></span><span class="ntr">backgroundImage</span><span class="bl">:</span> <span class="not-link">"url('YOUR_PATH/YOUR_IMAGE.jpg')"</span></li>
+            <li style="margin-top: 10px;"><span class="space"></span><span class="ntr">});</span></li>
+            <li style="margin-top: 10px;"><span class="ntr">&lt;/</span><span class="tag">script</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="ntr">&lt;/</span><span class="tag">head</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="ntr">&lt;</span><span class="tag">body</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="comment">// YOUR HERO SECTION</span></li>
+            <li><span class="ntr">&lt;</span><span class="tag">section</span> <span class="attribute">class</span><span class="ntr">="</span><span class="not-link">SOME_CLASS</span><span class="ntr">"</span> <span class="attribute">snake-parallax</span><span class="ntr">="</span><span class="not-link">hero</span><span class="ntr">"</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="comment">// YOUR CONTENT</span></li>
+            <li><span class="ntr">&lt;/</span><span class="tag">section</span><span class="ntr">&gt;</span></li>
+            <li style="margin-top: 10px;"><span class="ntr">&lt;/</span><span class="tag">body</span><span class="ntr">&gt;</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Happy Coding!</h3>
+      <a href="https://twitter.com/intent/tweet?screen_name=ZayadNajdaoui&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ZayadNajdaoui</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <p class="credit">Credit: Photo by <a href="https://unsplash.com/@peterlaster" target="_blank">Pedro Lastra</a> on <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+    </div>
+  </body>
+</html>
