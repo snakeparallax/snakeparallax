@@ -1,5 +1,6 @@
 # Snake Parallax
 A jquery plugin that creates a simple, clean, and powerfull parallax effect.
+See live demo: [https://snakeparallax.github.io/snakeparallax/](https://snakeparallax.github.io/snakeparallax/)
 
 ## Getting started
 
