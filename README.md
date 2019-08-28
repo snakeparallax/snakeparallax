@@ -33,7 +33,7 @@ Second, call the Snake Parallax initializer.
 
 ### Set HTML
 
-You need to create a div or section tag for your hero section, and add the attribute ```snake-parallax = "hero"```. You do not need to create a special class, id, or css style for the section.
+You need to create a div or section tag for your hero section, and add the attribute ```snake-parallax="hero"```. You do not need to create a special class, id, or css style for the section.
 
 ```
 <section snake-parallax="hero">
